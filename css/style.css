@@ -1,0 +1,177 @@
+:root {
+  --main-bg-color: coral;  
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.page-title {
+  text-align: center;
+}
+
+
+.bar-graph {
+
+    padding-left: 200px;
+    width: 70%; 
+    display: flex;
+    align-items: flex-end;
+    height: 550px;
+    margin-top: 0px;
+  }
+  
+  .bar-graph li {
+    display: block;
+    width: 50px;
+    padding: 1.5625rem 0;
+    position: relative;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    height: 110%;
+    margin: 0 1.8% 0 0;
+    flex: 1 1 15%;
+  }
+  
+  .bar-graph .bar-graph-x-axis {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .bar-graph .bar-graph-y-axis {
+    display: flex;
+    flex-direction: initial;
+    justify-content: space-between;
+  }
+  
+  .bar-graph .bar-graph-label {
+    margin: 0;
+    background-color: none;
+    color: #8a8a8a;
+    position: relative;
+  }
+  
+  @media (min-width: 40em) {
+    .bar-graph .bar-graph-label:before, .bar-graph .bar-graph-label:after {
+      content: "";
+      position: absolute;
+      border-bottom: 1px dashed #8a8a8a;
+      top: 0;
+      left: 0;
+      height: 50%;
+      width: 20%;
+    }
+  }
+  
+  @media (min-width: 40em) and (min-width: 64em) {
+    .bar-graph .bar-graph-label:before, .bar-graph .bar-graph-label:after {
+      width: 30%;
+    }
+  }
+  
+  @media (min-width: 40em) {
+    .bar-graph .bar-graph-label:after {
+      left: auto;
+      right: 0;
+    }
+  }
+  
+  .bar-graph .percent {
+    letter-spacing: -3px;
+    opacity: 0.4;
+    width: 100%;
+    
+    position: absolute;
+  }
+  
+  @media (min-width: 600px) {
+    .bar-graph .percent {
+      font-size: 2.875rem;
+    }
+  }
+  
+  .bar-graph .percent span {
+    font-size: 1.875rem;
+  }
+  
+  .bar-graph .description {
+    font-weight: 800;
+    opacity: 0.5;
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 14px;
+    bottom: 20px;
+    position: absolute;
+    font-size: 1rem;
+    overflow: hidden;
+  }
+  
+  .bar-graph .bar-one {
+    border: 1px solid #1779ba;
+    background: linear-gradient(#2196e3, #1779ba 70%);
+    transition-duration: 350ms;
+  }
+  
+  .bar-graph .bar-two {
+    border: 1px solid #767676;
+    background: linear-gradient(#909090, #767676 70%);
+    transition-duration: 350ms;
+  }
+ 
+  .bar-graph .bar-three {
+    border: 1px solid #3adb76;
+    background: linear-gradient(#65e394, #3adb76 70%);
+    transition-duration: 350ms;
+  }
+  .bar-graph .bar-four {
+    border: 1px solid #3ab5db;
+    background: linear-gradient(#3ab5db, #3ab5db 70%);
+    transition-duration: 350ms;
+  }
+  .bar-graph .bar-five {
+    border: 1px solid #a74eca;
+    background: linear-gradient(#a74eca, #a74eca 70%);
+    transition-duration: 350ms;
+  }
+  .bar-graph .bar-six {
+    border: 1px solid #db6d3a;
+    background: linear-gradient(#db6d3a, #db6d3a 70%);
+    transition-duration: 350ms;
+  }
+    
+  .bar-graph .bar-seven {
+    border: 1px solid #ffae00;
+    background: linear-gradient(#ffbe33, #ffae00 70%);
+    transition-duration: 350ms;
+  }
+  
+  .bar-graph .bar-eight {
+    border: 1px solid #cc4b37;
+    background: linear-gradient(#d67060, #cc4b37 70%);
+    transition-duration: 350ms;
+  }
+  .bar-one:hover, .bar-two:hover, .bar-three:hover, .bar-four:hover, .bar-five:hover, .bar-six:hover, .bar-seven:hover
+  , .bar-eight:hover {
+    background: var(--main-bg-color);
+  }
+  
