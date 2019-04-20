@@ -14,7 +14,7 @@ const options = {
 }
 function displayData() {
     console.log('I am in display function')
-    fetch('http://api.football-data.org/v2/competitions/2000/standings', options)
+    fetch('https://api.football-data.org/v2/competitions/2000/standings', options)
         .then(response => response.json())
         .then(data => {
             //This will pull all the data from standings API object
